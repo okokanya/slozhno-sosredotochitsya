@@ -4,6 +4,27 @@
   переключая тему
 */
 
+
+:root.theme-light {
+  --accent-color: pink;
+
+  /* Переменные светлой темы */    
+}
+
+
+/* Остальные стили */
+
+@media (prefers-color-scheme: light) {
+:root {
+      /* Дублируем переменные светлой темы */    
+  }
+}
+
+/* Остальные стили */ 
+.theme_light > .header {
+  background-image: url("../images/cover-image-light.png");
+}
+
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
