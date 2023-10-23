@@ -17,7 +17,6 @@
   background-color: aliceblue;
   background-attachment: fixed;
   background-size: cover;
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
 
 * {
@@ -233,6 +232,11 @@ line-height: 130%;
 
 .vertical {
   grid-row: span 2;
+  aspect-ratio: 1000/1899;
+}
+
+.vertical-width {
+  grid-row: span 2;
 }
 
 
@@ -285,11 +289,70 @@ line-height: 130%;
 
   .header__theme-menu {
     grid-row: 2/3;
+    padding: 28px 14px 0 0;
   }
 
 
   .intro-aside {
     width: 364px;
+    grid-row: 5/6;
+    margin: 114px 21px 0 auto;
+  }
+  .main-title {
+    grid-row: 4/5;
+  display: unset;
   }
 
+  .header {
+      margin: 0 0 325px 0;
+  }
+
+  .section {
+    grid-column-gap: 33px;
+    padding: 0 20px;
+  }
+
+  .section-tripple {
+    grid-template-columns: auto;
+  
+  }
+
+
+  .article-tripple-short {
+    grid-row: auto;
+    grid-column: span 3;
+  }
+
+  .section-tripple {
+    padding: 0 20px;
+  }
+
+  .section-tripple .section-title-aside {
+    width: 200px;
+  }
+
+  .section-tripple ~ .section {
+    grid-column-gap: 30px;
+  }
+  .section-gallery {
+    padding: 0 20px;
+  }
+
+  .vertical {
+    grid-row: span 2;
+    aspect-ratio: 992/1899;
+  }
+
+  .vertical-width {
+    aspect-ratio: 200/498;
+  }
+
+  .high-horisontal {
+    aspect-ratio: 280/187;
+  }
+
+  .footer {
+    font-weight: bold;
+  height: 1012px;
+  }
 }
