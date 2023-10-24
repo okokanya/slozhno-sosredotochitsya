@@ -6,7 +6,9 @@
 
 :root {
   --accent-color: #FF0070;
+  --title-shadow: #FF0070;
   --title-color: #000028;
   --bg: #000028;
   --font-color: #F1B2CE;
+  --accent-title-color: #DB00FF;
 } 
