@@ -53,7 +53,7 @@
   --accent-title-color: #FF8DCB;
   --title-shadow: #FF0070;
 }
-.rec {
+.page.theme_light .rec {
   display: none;
 }
 
