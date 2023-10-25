@@ -53,4 +53,10 @@ border-bottom: 1px solid var(--font-color);
 
 a:focus {
   border: 1px solid var(--font-color);
-  }
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  text-shadow: 2px 2px 0 var(--accent-color);
+}
