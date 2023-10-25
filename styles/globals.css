@@ -45,3 +45,12 @@ a {
   font-size: inherit;
   line-height: inherit;
 }
+
+
+a:hover {
+border-bottom: 1px solid var(--font-color);
+}
+
+a:focus {
+  border: 1px solid var(--font-color);
+  }

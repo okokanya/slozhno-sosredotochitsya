@@ -30,6 +30,7 @@
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   text-shadow: 4px 4px 0 var(--title-shadow);
   line-height: 100%;
+  font-weight: bold;
   grid-row: 3/4;
   display: flex;
   align-items: center;
@@ -49,6 +50,7 @@
 .title-decor {
   background-color: var(--accent-color);
   color: var(--title-color);
+  /* color: var(--font-color); */
   font-size: 18px;
   font-style: normal;
   font-weight: 700;

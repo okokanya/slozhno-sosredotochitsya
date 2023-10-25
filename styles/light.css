@@ -5,22 +5,17 @@
 */
 
 
-/* :root .page.theme-light {
-  --accent-color: pink;
-  --font-color: #353430;
-  --accent-title-color: #FF8DCB;
-}
-  /* Переменные светлой темы */    
-
-
-
-
 :root .theme-light {
-  /* --accent-color: pink;
+
+/*   
+  --accent-color: #FF8DCB;
   --font-color: #353430;
-  --accent-title-color: #FF8DCB; */
+  --accent-title-color: #FFC2E6;
+  --title-shadow: #FF0070; */
 
   /* Переменные светлой темы */    
+
+
 }
 
 
@@ -32,9 +27,13 @@
 :root {
       /* Дублируем переменные светлой темы */  
       
-      --accent-color: pink;
-      --font-color: #353430;
-      --accent-title-color: #FF8DCB;
+  
+  --accent-color: #FF8DCB;
+  --font-color: #353430;
+  --accent-title-color: #FFC2E6;
+  --title-shadow: #FF0070;
+  --title-color: #353430;
+  
   }
 }
 
@@ -48,19 +47,19 @@
   */
 
   background-image: url("../images/cover-image-light.png");
-  --accent-color: pink;
+  --accent-color: #FF8DCB;
   --font-color: #353430;
-  --accent-title-color: #FF8DCB;
+  --accent-title-color: #FFC2E6;
   --title-shadow: #FF0070;
 }
-.page.theme_light .rec {
+.page.theme_light.rec {
   display: none;
 }
 
-.section-title-aside {
+.page.theme_light.section-title-aside {
   color: var(--font-color);
 }
 
-.decorated-zone {
+.page.theme_light.decorated-zone {
   background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
 }
