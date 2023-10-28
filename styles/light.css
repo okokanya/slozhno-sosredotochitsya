@@ -24,6 +24,11 @@
       --title-shadow: #ff0070;
       --title-color: #353430;
   }
+  .rec {
+    display: none;
+    visibility: hidden;
+  }
+
 }
 
 /* Остальные стили */
@@ -43,14 +48,14 @@
 
 }
 
-.page.theme_light.rec {
+.theme_light~.rec {
   display: none;
   visibility: hidden;
 }
-
+/* 
 .page.theme_light.section-title-aside {
   color: var(--font-color);
-}
+} */
 
 .page.theme_light.decorated-zone {
   background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
