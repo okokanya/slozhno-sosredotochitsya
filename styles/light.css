@@ -38,10 +38,14 @@
   --font-color: #353430;
   --accent-title-color: #ffc2e6;
   --title-shadow: #ff0070;
+  --title-color: #353430;
+  --title-dark: #353430;;
+
 }
 
 .page.theme_light.rec {
   display: none;
+  visibility: hidden;
 }
 
 .page.theme_light.section-title-aside {
