@@ -4,13 +4,12 @@
   переключая тему
 */
 :root .theme-light {
-  /*   
---accent-color: #FF8DCB;
---font-color: #353430;
---accent-title-color: #FFC2E6;
---title-shadow: #FF0070; */
-
   /* Переменные светлой темы */
+  --accent-color: #ff8dcb;
+  --font-color: #353430;
+  --accent-title-color: #ffc2e6;
+  --title-shadow: #ff0070;
+  --title-color: #353430;
 }
 
 /* Остальные стили */
@@ -24,11 +23,24 @@
       --title-shadow: #ff0070;
       --title-color: #353430;
   }
-  .rec {
+
+  .page.theme_auto.rec {
     display: none;
     visibility: hidden;
   }
 
+  .page.theme_light.rec {
+    display: none;
+    }
+  .decorated-zone {
+    background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
+  }
+  .rec {
+    display: none;
+  }
+  .page {
+    background-image: url("../images/cover-image-light.png");
+  }
 }
 
 /* Остальные стили */
@@ -48,14 +60,13 @@
 
 }
 
-.theme_light~.rec {
+.theme_light .rec {
   display: none;
-  visibility: hidden;
 }
-/* 
-.page.theme_light.section-title-aside {
-  color: var(--font-color);
-} */
+
+.theme_light.page {
+    background-image: url("../images/cover-image-light.png");
+}
 
 .page.theme_light.decorated-zone {
   background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");

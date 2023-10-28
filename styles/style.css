@@ -12,7 +12,7 @@
 }
 .page {
   display: grid;
-  background-image: url("../images/cover-image-dark.png");
+  /* background-image: url("../images/cover-image-dark.png"); */
   background-attachment: fixed;
   background-size: cover;
 }
@@ -103,7 +103,7 @@
   margin: 0 auto;
   padding: 12px 0 0 0;
   position: relative;
-  background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
+  /* background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg"); */
   background-position: top 20px right 20px, bottom 30px left 20px;
   background-repeat: no-repeat;
   display: grid;
