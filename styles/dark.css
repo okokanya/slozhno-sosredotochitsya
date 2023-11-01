@@ -4,32 +4,66 @@
   переключая тему
 */
 :root.theme-dark {
-  --accent-color: #ff0070;
-  --title-shadow: #ff0070;
-  --title-color: #ff0070;
+  --accent-color: #FF0070;
+  --title-shadow: #FF0070;
+  --title-color: #FF0070;
   --title-dark: #000028;
   --bg: #000028;
   --font-color: #f1b2ce;
   --accent-title-color: #db00ff;
+  --link-hover: rgba(255, 0, 112, 0.40);
 }
-
+/* 
+:root {
+  --accent-color: #FF0070;
+  --title-shadow: #FF0070;
+  --title-color: #FF0070;
+  --title-dark: #000028;
+  --bg: #000028;
+  --font-color: #f1b2ce;
+  --accent-title-color: #db00ff;
+  --link-hover: rgba(255, 0, 112, 0.40);
+} */
 .page.theme_dark {
+    --accent-color: #FF0070;
+    --title-shadow: #FF0070;
+    --title-color: #FF0070;
+    --title-dark: #000028;
+    --bg: #000028;
+    --font-color: #f1b2ce;
+    --accent-title-color: #db00ff;
+    --link-hover: rgba(255, 0, 112, 0.40);
+  
   /* сохраните этот селектор в приведённом виде.
   Так стили написанные ниже будут иметь больший вес,
   чем стили в медиазапросе предпочтений пользователя
 */
   background-image: url("../images/cover-image-dark.png");
 }
-
+/* 
 .page.theme-dark .rec {
   display: block;
-}
+} */
 
 .page.theme_dark .decorated-zone {
   background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
 }
 
 @media (prefers-color-scheme: dark) {
+
+
+  .theme-auto.decorated-zone {
+    background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
+  }
+ 
+  .theme_light .rec {
+    display: none;
+  }
+  
+  .theme_dark .rec {
+    display: block;
+  }
+
   :root {
       --accent-color: #ff0070;
       --title-shadow: #ff0070;
@@ -38,14 +72,13 @@
       --bg: #000028;
       --font-color: #f1b2ce;
       --accent-title-color: #db00ff;
+      --link-hover: rgba(255, 0, 112, 0.40);
   }
 
   .decorated-zone {
       background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
   }
-  .rec {
-      display: block;
-  }
+
   .page {
       background-image: url("../images/cover-image-dark.png");
   }

@@ -12,4 +12,17 @@
   --bg: #000028;
   --font-color: #F1B2CE;
   --accent-title-color: #DB00FF;
-} 
+  --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
+  --link-hover: rgba(255, 0, 112, 0.40);
+}
+
+.theme-dark {
+  --accent-color: #FF0070;
+  --title-shadow: #FF0070;
+  --title-color: #FF0070;
+  --title-dark: #000028;
+  --bg: #000028;
+  --font-color: #f1b2ce;
+  --accent-title-color: #db00ff;
+  --link-hover: rgba(255, 0, 112, 0.40);
+}

@@ -1,8 +1,6 @@
 /* Глобальные стили для проекта, их можно дополнять и менять по желанию */
 
 /* :root {
-  --accent-color: #FF0070;
-
 } */
 *,
 *::before,
@@ -14,7 +12,7 @@ body {
   min-inline-size: 375px;
   max-inline-size: 1440px;
   margin: 0 auto;
-  font-family: IBM Plex mono;
+  font-family: IBM Plex mono, monospace;
 }
 
 h1,
@@ -44,6 +42,16 @@ a {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+  outline: none;
+}
+
+button:not(:focus), a:not(:focus) {
+  cursor: pointer;
+}
+
+
+.header__theme-menu-button:hover {
+  border-color: var(--link-hover);
 }
 
 
@@ -52,11 +60,12 @@ border-bottom: 1px solid var(--font-color);
 }
 
 a:focus {
-  border: 1px solid var(--font-color);
+  outline: 1px solid var(--font-color);
 }
 
 .link {
-  cursor: pointer;
+  /* cursor: pointer; */
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
+  padding: 0 4px;
 }
