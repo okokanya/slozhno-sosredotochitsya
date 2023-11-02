@@ -40,19 +40,13 @@
 */
   background-image: url("../images/cover-image-dark.png");
 }
-/* 
-.page.theme-dark .rec {
-  display: block;
-} */
 
 .page.theme_dark .decorated-zone {
   background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
 }
 
 @media (prefers-color-scheme: dark) {
-
-
-  .theme-auto.decorated-zone {
+  .theme-auto .decorated-zone {
     background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
   }
  
