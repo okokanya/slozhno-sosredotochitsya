@@ -61,11 +61,12 @@ border-bottom: 1px solid var(--font-color);
 
 a:focus {
   outline: 1px solid var(--font-color);
+  outline-offset: 3px;
 }
 
 .link {
   /* cursor: pointer; */
   text-decoration: none;
   text-shadow: 2px 2px 0 var(--accent-color);
-  padding: 0 4px;
+  padding: 0;
 }
