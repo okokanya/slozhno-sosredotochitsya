@@ -72,9 +72,8 @@
   --accent-title-color: #ffc2e6;
   --title-shadow: #ff0070;
   --title-color: #353430;
-  --title-dark: #353430;;
+  --title-dark: #353430;
   --link-hover: rgba(50, 49, 45, 0.40);
-
 }
 
 .theme_light .rec {
