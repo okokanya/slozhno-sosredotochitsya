@@ -84,10 +84,6 @@
   display: block;
 }
 
-.page.theme_light {
-    background-image: url("../images/cover-image-light.png");
-}
-
 .theme_light.page.decorated-zone {
   background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
 }
