@@ -17,20 +17,6 @@
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
-  .decorated-zone {
-    background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
-  }
-  .page.theme_light .decorated-zone {
-    background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
-  }
-
-  .page.theme_dark .decorated-zone {
-    background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
-  }
-  .page.theme_auto .decorated-zone {
-    background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
-  }
-
 
   .theme_light .rec {
     display: none;
@@ -43,11 +29,6 @@
   .theme_auto .rec {
     display: none;
   }
-
-  .decorated-zone {
-    background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
-  }
-  
 
   :root {
       /* Дублируем переменные светлой темы */

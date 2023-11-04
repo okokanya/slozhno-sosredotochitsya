@@ -21,14 +21,13 @@
 }
 
 .main-title {
+
   font-size: var(--title-size);
-  margin: 36px 0 0 0;
+  margin: 0px 0 0 0;
   text-shadow: 4px 4px 0 var(--title-shadow);
   line-height: 100%;
   font-weight: bold;
   grid-row: 6/8;
-  display: flex;
-  align-items: center;
   color: var(--accent-title-color);
 }
 
@@ -66,6 +65,7 @@
   align-items: center;
   justify-content: center;
   color: var(--title-color);
+  padding: 6px 0 0 0;
 }
 
 .header__theme-menu-button {
@@ -73,7 +73,7 @@
   box-sizing: border-box;
   padding: 7px 14px;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 10px;
   background: none;
   border: 1px solid transparent;
   outline: none;
@@ -103,6 +103,30 @@
   background-repeat: no-repeat;
   display: grid;
   grid-template-rows: repeat(13, calc(100vh / 13));
+}
+
+.decorated-zone::before {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-right: 1px solid var(--title-color);
+  border-top: 1px solid var(--title-color);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.decorated-zone::after {
+  content: '';
+  display: block;
+  width: 25px;
+  height: 25px;
+  border-left: 1px solid var(--title-color);
+  border-bottom: 1px solid var(--title-color);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
 }
 
 .rec {
@@ -185,7 +209,7 @@
   margin: 0 0 10px 0;
 }
 
-.article-list-p {
+.article-list-text {
   color: var(--font-color);
   font-size: 18px;
   font-style: normal;
@@ -250,6 +274,7 @@
 
 .center {
   text-align: center;
+  margin: 20px 0 0 0;
 }
 
 @media screen and (max-width: 1023px) {
@@ -260,9 +285,13 @@
       align-items: end;
   }
 
+  .header__theme-menu-button {
+    padding: 7px 14px;
+    margin: 5px 4px;
+  }
   .header__theme-menu {
       grid-row: 3/4;
-      padding: 16px 14px 0 0;
+      padding: 11px 14px 0 0;
   }
 
   .rec {
@@ -274,11 +303,12 @@
       max-width: 364px;
       grid-row: 10/11;
       margin: 0 20px 0 auto;
+      padding: 0;
   }
   .main-title {
       grid-row: 6/9;
       display: unset;
-      margin: 50px 0 0 0;
+      margin: 49px 0 0 0;
   }
 
   .header {

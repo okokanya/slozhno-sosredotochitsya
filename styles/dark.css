@@ -13,17 +13,7 @@
   --accent-title-color: #db00ff;
   --link-hover: rgba(255, 0, 112, 0.40);
 }
-/* 
-:root {
-  --accent-color: #FF0070;
-  --title-shadow: #FF0070;
-  --title-color: #FF0070;
-  --title-dark: #000028;
-  --bg: #000028;
-  --font-color: #f1b2ce;
-  --accent-title-color: #db00ff;
-  --link-hover: rgba(255, 0, 112, 0.40);
-} */
+
 .page.theme_dark {
     --accent-color: #FF0070;
     --title-shadow: #FF0070;
@@ -42,19 +32,8 @@
   background-image: url("../images/cover-image-dark.png");
 }
 
-.page.theme_dark .decorated-zone {
-  background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
-}
-.page.theme_light .decorated-zone {
-  background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
-}
 @media (prefers-color-scheme: dark) {
-  .theme_light .decorated-zone {
-    background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
-  }
-  .theme_auto .decorated-zone {
-    background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
-  }
+
   .theme_light .rec {
     display: none;
   }
