@@ -6,7 +6,6 @@
 :root {
   --accent-color: #FF0070;
   --title-shadow: #FF0070;
-  /* --title-color: #000028; */
   --title-color: #FF0070;
   --title-dark: #000028;
   --bg: #000028;
@@ -14,6 +13,8 @@
   --accent-title-color: #DB00FF;
   --title-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem); 
   --link-hover: rgba(255, 0, 112, 0.40);
+  --stroke: #FF0070;
+
 }
 
 .theme-dark {
@@ -25,4 +26,6 @@
   --font-color: #f1b2ce;
   --accent-title-color: #db00ff;
   --link-hover: rgba(255, 0, 112, 0.40);
+  --stroke: #FF0070;
+
 }

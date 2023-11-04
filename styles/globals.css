@@ -50,10 +50,10 @@ button:not(:focus), a:not(:focus) {
 }
 
 
+
 .header__theme-menu-button:hover {
   border-color: var(--link-hover);
 }
-
 
 a:hover {
 border-bottom: 1px solid var(--font-color);

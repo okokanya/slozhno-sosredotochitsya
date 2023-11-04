@@ -3,7 +3,7 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root.theme-dark {
+:root.theme_dark {
   --accent-color: #FF0070;
   --title-shadow: #FF0070;
   --title-color: #FF0070;
@@ -33,6 +33,7 @@
     --font-color: #f1b2ce;
     --accent-title-color: #db00ff;
     --link-hover: rgba(255, 0, 112, 0.40);
+    --stroke: #ff0070;
   
   /* сохраните этот селектор в приведённом виде.
   Так стили написанные ниже будут иметь больший вес,
@@ -44,12 +45,16 @@
 .page.theme_dark .decorated-zone {
   background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
 }
-
+.page.theme_light .decorated-zone {
+  background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
+}
 @media (prefers-color-scheme: dark) {
-  .theme-auto .decorated-zone {
+  .theme_light .decorated-zone {
+    background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
+  }
+  .theme_auto .decorated-zone {
     background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
   }
- 
   .theme_light .rec {
     display: none;
   }
@@ -67,10 +72,8 @@
       --font-color: #f1b2ce;
       --accent-title-color: #db00ff;
       --link-hover: rgba(255, 0, 112, 0.40);
-  }
+      --stroke: #ff0070;
 
-  .decorated-zone {
-      background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
   }
 
   .page {

@@ -3,7 +3,7 @@
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
-:root .theme-light {
+:root .theme_light {
   /* Переменные светлой темы */
   --accent-color: #ff8dcb;
   --font-color: #353430;
@@ -17,6 +17,21 @@
 /* Остальные стили */
 
 @media (prefers-color-scheme: light) {
+  .decorated-zone {
+    background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
+  }
+  .page.theme_light .decorated-zone {
+    background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
+  }
+
+  .page.theme_dark .decorated-zone {
+    background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
+  }
+  .page.theme_auto .decorated-zone {
+    background-image: url("../images/corner-start.svg"), url("../images/corner-end.svg");
+  }
+
+
   .theme_light .rec {
     display: none;
   }
@@ -32,6 +47,7 @@
   .decorated-zone {
     background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
   }
+  
 
   :root {
       /* Дублируем переменные светлой темы */
@@ -41,9 +57,11 @@
       --title-shadow: #ff0070;
       --title-color: #353430;
       --link-hover: rgba(50, 49, 45, 0.40);
+      --stroke: #353430;
+
   }
 
-  .theme-dark {
+  .theme_dark {
     --accent-color: #FF0070;
     --title-shadow: #FF0070;
     --title-color: #FF0070;
@@ -52,6 +70,8 @@
     --font-color: #f1b2ce;
     --accent-title-color: #db00ff;
     --link-hover: rgba(255, 0, 112, 0.40);
+    --stroke: #ff0070;
+
   }
 
   .page {
@@ -60,6 +80,9 @@
 }
 
 /* Остальные стили */
+.page.theme_light .decorated-zone {
+  background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
+}
 
 .page.theme_light {
   /* сохраните этот селектор в приведённом виде.
@@ -74,6 +97,7 @@
   --title-color: #353430;
   --title-dark: #353430;
   --link-hover: rgba(50, 49, 45, 0.40);
+  --stroke: #353430;
 }
 
 .theme_light .rec {
@@ -82,8 +106,4 @@
 
 .theme_dark .rec {
   display: block;
-}
-
-.theme_light.page.decorated-zone {
-  background-image: url("../images/corner-start-light.svg"), url("../images/corner-end-light.svg");
 }
